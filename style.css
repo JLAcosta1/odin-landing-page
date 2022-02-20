@@ -12,6 +12,8 @@ body {
     justify-content: space-between;
     background-color: #1f2937;
     align-items: center;
+    padding-left: 225px;
+    padding-right: 225px;
 }
 
 .left-header {
@@ -37,9 +39,29 @@ body {
     flex: 1 1 auto;
     display: flex;
     background-color: #1f2937;
+    padding-left: 225px;
+    padding-right: 225px;
+    padding-top: 40px;
+    padding-bottom: 90px;
+    justify-content: center;
+    gap: 40px;
+}
+
+.title-card .test {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.title-card img {
+    width: 400px;
+    height: 200px;
+    max-height: 300px;
+    margin-left: auto;
 }
 
 .left-title-card {
+    flex: 1 1 0;
     display: flex;
     flex-direction: column;
 }
@@ -47,11 +69,31 @@ body {
 .left-title-card .title {
     color: #f9faf8;
     font-size: 48px;
+    font-weight: 800;
+    overflow-wrap: break-word;
+    margin: 0;
 }
 
 .left-title-card .text {
     color: #e5e7eb;
     font-size: 18px;
+}
+
+.left-title-card .sign-up-button {
+    margin-top: auto;
+}
+
+button.title-card-sign-up {
+    color:#f9faf8;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #3882f6;
+    border: 0px solid #FFFFFF;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 6px;
+    padding-bottom: 4px;
 }
 
 
@@ -60,17 +102,47 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 225px;
+    padding-right: 225px;
+    padding-top: 20px;
+    padding-bottom: 60px;
 }
 
-.icons {
+.info-card .info-card-title {
+    margin:0;
+    margin-bottom: 40px;
+    color:#1f2937;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.icon-container {
+    flex: 1 1 auto;
     display: flex;
-    overflow-wrap: break-word;
-
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
-.icons img {
-    height: 100px;
-    width: 100px;
+.icon {
+    width: 160px;
+    overflow-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.icon img {
+    height: 160px;
+    width: 160px;
+    border: 5px solid #3882f6;
+    border-radius: 18px;
+}
+
+.icon .text {
+    text-align: center;
+    color:#1f2937;
 }
 
 .quote-card {
@@ -80,6 +152,10 @@ body {
     background-color: #e5e7eb;
     justify-content: center;
     align-items: center;
+    padding-left: 225px;
+    padding-right: 225px;
+    padding-top: 100px;
+    padding-bottom: 80px;
 }
 
 .quote-card .quote {
@@ -89,14 +165,65 @@ body {
     font-style: italic;
 }
 
+.quote-card .speaker-container {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: 40px;
+    color: #1f2937;
+    font-size: 22px;
+    font-weight: 600;
+}
+
 .quote-card .speaker {
-    color: #1f2937
+    color: #1f2937;
 }
 
 .call-to-action-card {
     flex: 1 1 auto;
     display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding-left: 225px;
+    padding-right: 225px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.call-to-action-card-super {
+    background-color: #3882f6;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.call-to-action-card-title {
+    color:#f9faf8;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.call-to-action-card-text {
+    color:#e5e7eb;
+}
+
+button.call-to-action-sign-up {
+    color:#f9faf8;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #3882f6;
+    border: 2px solid #f9faf8;
+    box-shadow: none;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .footer {
